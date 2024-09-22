@@ -121,6 +121,9 @@ Lors de l'integration de l'api au seins de notre projet, il faut indiquer dans c
 ````
 use ApiPlatform\Metadata\ApiResource;
 ````
+---
+*Voici Un appercu de mon API plateform apres son integration au sein projet :*
+![alt text](API-brace-ArmchairPNG.PNG)
 ## Serialisation des groupes 
 Chaque entité utilise des groupes de sérialisation pour contrôler les données visibles via l'API
 + inclure les groupes de serialisations dans nos entiy
