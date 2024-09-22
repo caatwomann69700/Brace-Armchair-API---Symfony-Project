@@ -1,17 +1,17 @@
 # Brace Armchair API - Symfony Project 
 ## Table des matières
-1. [Introduction]()
-2. [Fonctionnalités]()
-3. [Installation]()
-4. [Création des entity]()
-5. [Création du User]()
-5. [App fixtures]()
-5. [Integration de l'API]()
-5. [Serialisation des groupes]()
-5. [Authentification JWT]()
-6. [Tests]()
-7. [Contributions]()
-8. [Licence]()
+1. [Introduction](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+2. [Fonctionnalités](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+3. [Installation](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+4. [Création des entity](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+5. [Création du User](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+5. [App fixtures](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+5. [Integration de l'API](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+5. [Serialisation des groupes](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+5. [Authentification JWT](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+6. [Tests](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+7. [Contributions](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
+8. [Licence](https://github.com/caatwomann69700/Brace-Armchair-API---Symfony-Project/tree/main?tab=readme-ov-file#introduction)
 ## Introduction 
 BraceArmchair API est une application backend développée avec Symfony 6.4 sans l'utilisation de webapp, permettant de gérer des produits, des catégories, des utilisateurs, des paniers, des commandes, et des newsletters. Elle est conçue pour être utilisée comme API RESTful pour une boutique en ligne. Elle utilise API Platform pour la création et la gestion des points de terminaison API, avec une sécurisation via JWT.
 ## Fonctionnalités
