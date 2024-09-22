@@ -71,7 +71,10 @@ composer require security
 + CartItem
 + Wishlist 
 + Order 
-+ Newsletter 
++ Newsletter
+---
+*Voici Un appercu de mon MPD et des entity que je dois creer pour ce projet :*
+![alt text](Base_de_données.png)
 Avec la commande suivante : 
 ``` 
 php bin/console make:entity 
