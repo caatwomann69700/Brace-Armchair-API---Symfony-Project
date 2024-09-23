@@ -12,7 +12,7 @@ use symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: CategoryRepository::class)]
 #[ApiResource(
-    normalizationContext: ['groups' => ['category:read']]
+    normalizationContext: ['groups' => ['product:read']]
   )]
 class Category
 {

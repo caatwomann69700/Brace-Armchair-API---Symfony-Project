@@ -9,7 +9,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use ApiPlatform\Metadata\ApiResource;
-use symfony\Component\Serializer\Attribute\Groups;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: ProductRepository::class)]
 #[ApiResource(
@@ -48,10 +48,6 @@ class Product
     // Relation OneToMany avec Imagelist
     #[ORM\OneToMany(mappedBy: 'product', targetEntity: Imagelist::class, cascade: ['persist', 'remove'])]
     private Collection $imagelist;
-
-    // Relation OneToMany avec CartItem
-    #[ORM\OneToMany(mappedBy: 'product', targetEntity: CartItem::class, cascade: ['persist', 'remove'])]
-    private Collection $cartItems;
 
     public function __construct()
     {
@@ -143,32 +139,6 @@ class Product
             // Set the owning side to null (unless already changed)
             if ($imagelist->getProduct() === $this) {
                 $imagelist->setProduct(null);
-            }
-        }
-        return $this;
-    }
-
-    // Getters et setters pour CartItems
-    public function getCartItems(): Collection
-    {
-        return $this->cartItems;
-    }
-
-    public function addCartItem(CartItem $cartItem): static
-    {
-        if (!$this->cartItems->contains($cartItem)) {
-            $this->cartItems->add($cartItem);
-            $cartItem->setProduct($this);
-        }
-        return $this;
-    }
-
-    public function removeCartItem(CartItem $cartItem): static
-    {
-        if ($this->cartItems->removeElement($cartItem)) {
-            // Set the owning side to null (unless already changed)
-            if ($cartItem->getProduct() === $this) {
-                $cartItem->setProduct(null);
             }
         }
         return $this;
